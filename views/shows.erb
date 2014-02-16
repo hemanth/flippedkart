@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Best sellers</title>
+</head>
+<body>
+   <b> Best seller from flipkart, flipped by <a href="http://h3manth.com" target="_blank">Hemanth.HM</a> Prices listed here are the discounted pirces.</b>
+	<div class="best-sellers">
+        <%
+           @urls = []
+           @title.each { |x| @urls.push(x.children[0].attributes['href'].value)}
+        %>
+        <% [@title,@price,@urls].transpose.each do |title,price,url|%>
+        <p>
+       <a href="http://flipkart.com<%=url%>" target="_blank"><%=title.text%></a> <%=price%>
+        </p>
+        <% end %>
+    </div>
+</body>
+</html>
