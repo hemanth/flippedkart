@@ -9,4 +9,5 @@ source :rubygems
 # require statements in app.rb
 
 gem 'sinatra'
-gem 'nokogiri'
+# This change was made via Snyk to fix a vulnerability
+gem 'nokogiri', '= 1.5.3'
