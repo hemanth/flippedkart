@@ -10,4 +10,4 @@ source :rubygems
 
 gem 'sinatra'
 # This change was made via Snyk to fix a vulnerability
-gem 'nokogiri', '~> 1.6.6.4' # This change was made via Snyk to fix a vulnerability
+gem 'nokogiri', '~> 1.13.2.0' # This change was made via Snyk to fix a vulnerability
