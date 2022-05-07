@@ -8,6 +8,6 @@ source :rubygems
 # Ruby standard library. The remaining two are simply copied from the
 # require statements in app.rb
 
-gem 'sinatra'
+gem 'sinatra', '>= 2.2.0'
 # This change was made via Snyk to fix a vulnerability
 gem 'nokogiri', '~> 1.6.6.4' # This change was made via Snyk to fix a vulnerability
